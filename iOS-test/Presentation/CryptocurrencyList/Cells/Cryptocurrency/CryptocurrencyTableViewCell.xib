@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CryptocurrencyTableViewCell" rowHeight="113" id="Vct-GM-YcD" customClass="CryptocurrencyTableViewCell" customModule="Coins" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vct-GM-YcD" id="g5y-0r-bvA">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFR-II-v8g">
+                        <rect key="frame" x="20" y="10" width="374" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WC-VV-Zej">
+                        <rect key="frame" x="20" y="40.5" width="374" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNk-Ca-wRp">
+                        <rect key="frame" x="20" y="71" width="374" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LNk-Ca-wRp" firstAttribute="trailing" secondItem="1WC-VV-Zej" secondAttribute="trailing" id="1ei-7c-rgR"/>
+                    <constraint firstItem="QFR-II-v8g" firstAttribute="leading" secondItem="g5y-0r-bvA" secondAttribute="leading" constant="20" id="CdE-cI-kLv"/>
+                    <constraint firstItem="LNk-Ca-wRp" firstAttribute="top" secondItem="1WC-VV-Zej" secondAttribute="bottom" constant="10" id="Cns-FL-Bxc"/>
+                    <constraint firstItem="LNk-Ca-wRp" firstAttribute="leading" secondItem="1WC-VV-Zej" secondAttribute="leading" id="Dhg-IK-QiU"/>
+                    <constraint firstItem="1WC-VV-Zej" firstAttribute="trailing" secondItem="QFR-II-v8g" secondAttribute="trailing" id="Nyt-ZR-ffc"/>
+                    <constraint firstItem="1WC-VV-Zej" firstAttribute="top" secondItem="QFR-II-v8g" secondAttribute="bottom" constant="10" id="XYN-3x-LEa"/>
+                    <constraint firstItem="1WC-VV-Zej" firstAttribute="leading" secondItem="QFR-II-v8g" secondAttribute="leading" id="edJ-WC-peg"/>
+                    <constraint firstAttribute="trailing" secondItem="QFR-II-v8g" secondAttribute="trailing" constant="20" id="hQh-RH-tD7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LNk-Ca-wRp" secondAttribute="bottom" constant="10" id="ifx-V7-AwP"/>
+                    <constraint firstItem="QFR-II-v8g" firstAttribute="top" secondItem="g5y-0r-bvA" secondAttribute="top" constant="10" id="nb8-l0-LtO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changeForHourLabel" destination="LNk-Ca-wRp" id="NIP-iP-kjP"/>
+                <outlet property="dollarExchangeRateLabel" destination="1WC-VV-Zej" id="vEo-RY-GC1"/>
+                <outlet property="nameLabel" destination="QFR-II-v8g" id="q8q-Xy-xTM"/>
+            </connections>
+            <point key="canvasLocation" x="-81.159420289855078" y="72.65625"/>
+        </tableViewCell>
+    </objects>
+</document>
